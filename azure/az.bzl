@@ -1,7 +1,7 @@
 
-def az_artifactory(name):
+def test_shell(name):
     native.sh_binary(
-        name = "az-shell",
+        name = name,
         srcs = ["script.sh"],
     )
 
