@@ -1,0 +1,5 @@
+
+sh_binary(
+    name = "az-shell",
+    srcs = ["script.sh"],
+)
