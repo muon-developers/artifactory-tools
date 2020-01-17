@@ -1,2 +1,10 @@
+load("//azure:az.bzl", "az_artifacts_repo")
 
-workspace(name = "artifactory_tools")
+az_artifacts_repo(
+    name = "test",
+    org = "https://dev.azure.com/tcontemsft",
+    project = "bazel",
+    feed = "foo",
+    package_name = "test-package",
+    version = "1.0.0"
+)
