@@ -1,5 +1,5 @@
 def _artifacts_repo_impl(ctx):
-    ctx.execute(["mkdir","karaboudjan"])
+    hbkbnknjn
 
 az_artifacts_repo = repository_rule(
     implementation = _artifacts_repo_impl,
