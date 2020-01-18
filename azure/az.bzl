@@ -1,5 +1,5 @@
 def _artifacts_repo_impl(ctx):
-    ctx.file("hello.txt", ctx.attr.feed)
+    ctx.execute(["mkdir","karaboudjan"])
 
 az_artifacts_repo = repository_rule(
     implementation = _artifacts_repo_impl,
