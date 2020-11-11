@@ -1,7 +1,8 @@
-AZ_DEVOPS_ORG = "https://dev.azure.com/minervapoc"
-AZ_DEVOPS_PROJECT = "minerva-poc-github"
-AZ_ARTIFACTS_FEED = "libs"
-AZ_SCOPE_PROJECT = "project"
+## TODO: use .env file and pick them up
+AZ_DEVOPS_ORG = "<link-to-azure-devops-org>"
+AZ_DEVOPS_PROJECT = "<az-devops-proj-name>"
+AZ_ARTIFACTS_FEED = "<feed-name>"
+AZ_SCOPE_PROJECT = "<scope>"
 
 def _extract_then_delete_archive(ctx):
    ctx.extract(ctx.attr.archive) # extracts the zip
